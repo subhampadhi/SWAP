@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>784679449890-o3u6sbs13hn4ms09cg9b61kddfr9hohl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.784679449890-o3u6sbs13hn4ms09cg9b61kddfr9hohl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB2jN2X_8yHitDmMLBuYucvIY9tJAWzGOY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>784679449890</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.blogreader.test11.SWAP</string>
+	<key>PROJECT_ID</key>
+	<string>swap-team</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swap-team.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:784679449890:ios:ccfb2e2d1b06473d</string>
+	<key>DATABASE_URL</key>
+	<string>https://swap-team.firebaseio.com</string>
+</dict>
+</plist>
