@@ -1,25 +1,35 @@
 //
-//  tabbarViewController.swift
+//  LibraryViewController.swift
 //  SWAP
 //
-//  Created by Subham Padhi on 14/02/18.
+//  Created by Subham Padhi on 31/03/18.
 //  Copyright © 2018 Subham Padhi. All rights reserved.
 //
-// acha sune so the issue is bata.
+
 import UIKit
 
-class tabbarViewController: UITabBarController {
+class LibraryViewController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource{
 
+    
+    @IBOutlet weak var addBookButton: UIBarButtonItem!
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    // Declaring array Variables
+    
+     var bookNameArray = [String?]()
+    var bookUrlArray = [String?]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+     }
     
 
     /*

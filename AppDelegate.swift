@@ -3,7 +3,7 @@ import CoreData
 import Firebase
 import GoogleSignIn
 import FirebaseDatabase
-
+// i dont get i
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate, GIDSignInUIDelegate {
     var window: UIWindow?
@@ -32,24 +32,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate, GIDSi
             
             // checking database ref
             
-            self.databaseRef = Database.database().reference()
-            self.databaseRef.child("user_profiles").child(user!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+           self.databaseRef = Database.database().reference()
+            self.databaseRef.child("iOSTest").child("userData").child(user!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
                 let snapshot = snapshot.value as? NSDictionary
                 
                 if(snapshot == nil){
                     
                     //user logging in for the first time
-                    self.databaseRef.child("user_profile").child(user!.uid).child("name").setValue(user?.displayName)
-                    self.databaseRef.child("user_profile").child(user!.uid).child("email").setValue(user?.email)
+                    self.databaseRef.child("iOSTest").child("userData").child(user!.uid).child("name").setValue(user?.displayName)
+                    self.databaseRef.child("iOSTest").child("userData").child(user!.uid).child("email").setValue(user?.email)
                     
                 }
+ 
                 
                 //let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 self.window?.rootViewController?.performSegue(withIdentifier: "HomeViewSegue", sender: nil)
                 
                 
                 
-            })
+             })
         }
     }
     
